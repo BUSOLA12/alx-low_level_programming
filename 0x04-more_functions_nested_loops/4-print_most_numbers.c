@@ -16,5 +16,5 @@ continue;
 }
 putchar(n);
 }
-putchar(0);
+putchar(10);
 }
