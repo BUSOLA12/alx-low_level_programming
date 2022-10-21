@@ -8,7 +8,7 @@
  * Description: struct called "dog" that stores its name, its age
  * and the name of its owner.
  */
-struct dog
+struct my_idog
 {
 char *name;
 float age;
