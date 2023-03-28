@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-int i, j;
+int i;
 for (i = 48; i < 58; i++)
 {
 putchar(i);
 }
-for (j = 97; j < 103; i++)
+for (i = 97; i < 103; i++)
 {
-putchar(j);
+putchar(i);
 }
 putchar('\n');
 return (0);
