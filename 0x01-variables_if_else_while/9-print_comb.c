@@ -1,4 +1,4 @@
-#inlclude <stdio.h>
+#include <stdio.h>
 /**
  * main - prints single digits from 0-9 and seperates them
  * with comma
