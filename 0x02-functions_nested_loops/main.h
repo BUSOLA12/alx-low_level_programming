@@ -8,5 +8,5 @@
  * Desc: Header file containing declarations for all functions
  * used in  0x02-functions_nested_loops directory.
  */
-int _putchar(char c)
+int _putchar(char c);
 #endif /*MAIN_H*/
