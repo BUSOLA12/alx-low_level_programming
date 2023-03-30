@@ -20,6 +20,8 @@ else
 _putchar(op / 10 + '0');
 _putchar(op % 10 + '0');
 }
+if (i = 9)
+continue;
 _putchar(',');
 _putchar(' ');
 }
