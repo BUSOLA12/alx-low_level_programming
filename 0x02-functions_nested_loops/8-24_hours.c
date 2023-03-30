@@ -13,8 +13,8 @@ for (k = 48; k < 54; k++)
 {
 for (l = 48; l < 58; l++)
 {
-if (i <= 50 && j <= 51)
-break;
+if (i = 50 && j = 51)
+continue;
 _putchar(i);
 _putchar(j);
 _putchar(':');
