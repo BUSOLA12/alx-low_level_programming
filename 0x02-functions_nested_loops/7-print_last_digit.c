@@ -10,12 +10,12 @@ int l = n % 10;
 int s, m;
 if (l < 0)
 {
-m = (-l * 10) + -l
+m = (-l * 10) + -l;
 return (m);
 }
 else
 {
-s = (l * 10) + l
+s = (l * 10) + l;
 return (s);
 }
 }
