@@ -6,7 +6,7 @@
 void print_times_table(int n)
 {
 int a, b, op;
-if (n >=0 && n <= 15)
+if (n >= 0 && n <= 15)
 {
 for (a = 0; a <= n ; a++)
 {
@@ -31,6 +31,7 @@ if (b != n)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 }
 }
 if (op > 99)
@@ -41,6 +42,7 @@ _putchar(op % 10 + '0');
 if (b != n)
 {
 _putchar(',');
+_putchar(' ');
 _putchar(' ');
 }
 }
