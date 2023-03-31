@@ -40,7 +40,7 @@ _putchar(' ');
 for (; n <= 0; n++)
 {
 
-if (n < -10)
+if (n <= -10)
 {
 _putchar('-');
 _putchar(-n / 10 + '0');
