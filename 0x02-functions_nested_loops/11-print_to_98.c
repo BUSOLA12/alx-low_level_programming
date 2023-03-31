@@ -28,20 +28,30 @@ _putchar(' ');
 }
 else
 {
-for (; n <= 0; n++)
-{
-if (n == -10)
+    for (; n < -99; n++)
 {
 _putchar('-');
-_putchar(n / -10 + '0');
-_putchar(n % -10 * -1 + '0');
+_putchar(-n / 100 + '0');
+_putchar(((-n / 10) % 10) + '0');
+_putchar(-n % 10 + '0');
+_putchar(',');
+_putchar(' ');
+}
+for (; n <= 0; n++)
+{
+
+if (n < -10)
+{
+_putchar('-');
+_putchar(-n / 10 + '0');
+_putchar(-n % 10 + '0');
 _putchar(',');
 _putchar(' ');
 }
 if (n > -10 && n < 0)
 {
 _putchar('-');
-_putchar(n % -10 * -1 + '0');
+_putchar(-n % 10  + '0');
 _putchar(',');
 _putchar(' ');
 }
@@ -54,6 +64,7 @@ _putchar(' ');
 }
 for (; n < 98; n++)
 {
+
 if (n >= 1 && n <= 9)
 {
 _putchar(n % 10 + '0');
@@ -71,5 +82,7 @@ _putchar(' ');
 }
 _putchar('9');
 _putchar('8');
+_putchar ('\n');
 }
+
 
