@@ -21,6 +21,7 @@ if (b != n)
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+_putchar(' ');
 }
 }
 if (op > 9 && op < 100)
@@ -30,6 +31,7 @@ _putchar(op % 10 + '0');
 if (b != n)
 {
 _putchar(',');
+_putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
