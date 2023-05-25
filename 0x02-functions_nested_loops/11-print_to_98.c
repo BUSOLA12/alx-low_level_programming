@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 /**
  * print_to_98 - prints all positive and negative numbers
  * from n to 98
