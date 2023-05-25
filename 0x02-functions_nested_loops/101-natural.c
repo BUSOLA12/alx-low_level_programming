@@ -7,7 +7,6 @@
  */
 int main()
 {
-int limit = 1024;
 int sum_of_multiples = 0;
 int i;
 for (i = 1; i < 1024; i++)
