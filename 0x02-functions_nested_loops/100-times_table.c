@@ -13,7 +13,7 @@ for (a = 0; a <= n ; a++)
 _putchar(48);
 for (b = 1; b <= n; b++)
 {
-op = a * b;
+r = a * b;
 _putchar(44);
 _putchar(32);
 if (r < 10)
