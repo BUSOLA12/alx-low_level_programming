@@ -1,88 +1,32 @@
-#include "main.h"
+include <stdio.h>
 /**
- * print_to_98 - prints from n to 98
- * @n: it takes input
+ * print_to_98 - prints all positive and negative numbers
+ * from n to 98
+ * @n: input number
+ * Return: no return
  */
 void print_to_98(int n)
 {
-if (n > 98)
+if (n > 99)
 {
-for (; n > 98; n--)
+for (; n > 99; n--)
 {
-if (n == 99)
-{
-_putchar(((n / 10) % 10) + '0');
-_putchar(n % 10 + '0');
-_putchar(',');
-_putchar(' ');
-}
-else
-{
-_putchar(n / 100 + '0');
-_putchar(((n / 10) % 10) + '0');
-_putchar(n % 10 + '0');
-_putchar(',');
-_putchar(' ');
+printf("%d, ", n);
 }
 }
-}
-else
+else if (n < 0)
 {
-    for (; n < -99; n++)
-{
-_putchar('-');
-_putchar(-n / 100 + '0');
-_putchar(((-n / 10) % 10) + '0');
-_putchar(-n % 10 + '0');
-_putchar(',');
-_putchar(' ');
-}
-for (; n <= 0; n++)
-{
-
-if (n <= -10)
-{
-_putchar('-');
-_putchar(-n / 10 + '0');
-_putchar(-n % 10 + '0');
-_putchar(',');
-_putchar(' ');
-}
-if (n > -10 && n < 0)
-{
-_putchar('-');
-_putchar(-n % 10  + '0');
-_putchar(',');
-_putchar(' ');
-}
-if (n == 0)
-{
-_putchar('0');
-_putchar(',');
-_putchar(' ');
-}
-}
 for (; n < 98; n++)
 {
-
-if (n >= 1 && n <= 9)
+printf("%d, ", n);
+}
+}
+else
 {
-_putchar(n % 10 + '0');
-_putchar(',');
-_putchar(' ');
-}
-if (n > 9)
+for (; n < 98; n++)
 {
-_putchar(n / 10 + '0');
-_putchar(n % 10 + '0');
-_putchar(',');
-_putchar(' ');
+printf("%d, ", n);
 }
 }
+printf("98");
 }
-_putchar('9');
-_putchar('8');
-_putchar ('\n');
-}
-
-
