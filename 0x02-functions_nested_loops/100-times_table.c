@@ -5,53 +5,37 @@
  */
 void print_times_table(int n)
 {
-int a, b, op;
+int a, b, r;
 if (n >= 0 && n <= 15)
 {
 for (a = 0; a <= n ; a++)
 {
-for (b = 0; b <= n; b++)
+_putcher(48);
+for (b = 1; b <= n; b++)
 {
 op = a * b;
-if (op < 10)
+_putchar(44);
+_putchar(32);
+if (r < 10)
 {
-_putchar(op + '0');
-if (b != n)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
+_putchar(32);
+_putchar(32);
+_putchar(r + 48);
 }
-}
-if (op > 9 && op < 100)
+else if (r <= 99)
 {
-_putchar(op / 10 + '0');
-_putchar(op % 10 + '0');
-if (b != n)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
+_putchar(32);
+_putchar((r / 10) + 48);
+_putchar((r % 10) + 48);
 }
-}
-if (op > 99)
+else
 {
-_putchar(((op / 100) % 10) + '0');
-_putchar(((op / 10) % 10) + '0');
-_putchar(op % 10 + '0');
-if (b != n)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-}
+_putchar(((r / 100) % 10) + 48);
+_putchar(((r / 10) % 10) + 48);
+_putchar((r % 10) + 48);
 }
 }
 _putchar('\n');
 }
 }
 }
-
-
