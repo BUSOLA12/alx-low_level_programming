@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 int sum_of_multiples = 0;
 int i;
@@ -17,5 +17,5 @@ sum_of_multiples += i;
 }
 }
 printf("%d\n", sum_of_multiples);
-return(0);
+return (0);
 }
