@@ -13,8 +13,8 @@ for (j = 0; j < 15; j++)
 {
 if (j > 9)
 {
-_putchar((i / 10) + '0');
-_putchar((i % 10) + '0');
+_putchar((i / 10) + 48);
+_putchar((i % 10) + 48);
 }
 }
 _putchar('\n');
