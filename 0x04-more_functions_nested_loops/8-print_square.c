@@ -1,9 +1,9 @@
 #include "stdio.h"
 /**
- * print_square - print a square
- * @size: size of square
- * Description: Can only use _putchar to print. Use '#' to print square.
- */
+*print_square - prints squares
+*@size: parameter
+*Return:returns nothing
+*/
 void print_square(int size)
 {
 int i, j;
