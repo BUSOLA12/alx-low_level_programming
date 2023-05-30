@@ -7,22 +7,20 @@
 void rev_string(char *s)
 {
 	if (s == NULL)
-		return;  /* Handle null pointer case */
+		return;
 
-	int length = 0;
 	char *start = s;
 	char *end = s;
+	int length = 0;
 
-	/* Find the end of the string */
 	while (*end != '\0')
 	{
 		length++;
 		end++;
 	}
 
-	end--;  /* Adjust the end pointer to the last character */
+	end--;
 
-	/* Swap characters from start to end */
 	while (start < end)
 	{
 		char temp = *start;
