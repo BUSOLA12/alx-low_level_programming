@@ -12,3 +12,11 @@ cap_string
 cap_string.c
 leet
 leet.c
+rot13
+rot13.c
+print_number
+print_number.c
+infinite_add
+infinite_add.c
+print_buffer
+print_buffer.c
