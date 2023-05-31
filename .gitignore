@@ -4,3 +4,5 @@ strncpy
 strncpy.c
 strcmp
 strcmp.c
+rev_array
+rev_array.c
