@@ -8,3 +8,5 @@ rev_array
 rev_array.c
 string_toupper
 string_toupper.c
+cap_string
+cap_string.c
