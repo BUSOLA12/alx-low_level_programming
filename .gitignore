@@ -2,3 +2,5 @@ strncat
 strncat.c
 strncpy
 strncpy.c
+strcmp
+strcmp.c
