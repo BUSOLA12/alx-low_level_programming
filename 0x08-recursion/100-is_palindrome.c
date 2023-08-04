@@ -21,7 +21,7 @@ return (1 + _strlen_recursion(s + 1));
  */
 int is_palindrome(char *s)
 {
-len = _strlen_recursion(s);
+int len = _strlen_recursion(s);
 if ( len == 1 || len  == 0)
 {
 return (1);
