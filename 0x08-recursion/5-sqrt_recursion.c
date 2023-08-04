@@ -12,7 +12,7 @@ if (n < 0)
 {
 return (-1);
 }
-return (int _sqrt_helper(n, 0);
+return (int _sqrt_helper(n, 0));
 }
 /**
  * _sqrt_helper - recurses to find the natural
