@@ -27,7 +27,7 @@ if ( len == 1 || len  == 0)
 {
 return (1);
 }
-return ( is_palindrome_recursive(s, 0, len - 1));
+return (is_palindrome_recursive(s, 0, len - 1));
 }
 /**
  * is_palindrome_recursive - checks the characters recursively for palindrome
@@ -45,7 +45,7 @@ return (1);
 }
 if (s[start] == s[end])
 {
-return (is_palindrome_recursive( s, start + 1, end - 1));
+return (is_palindrome_recursive(s, start + 1, end - 1));
 }
 return (0);
 }
