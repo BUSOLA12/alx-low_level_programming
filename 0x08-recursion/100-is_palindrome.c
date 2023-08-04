@@ -47,5 +47,6 @@ if (s[start] == s[end])
 {
 return (is_palindrome_recursive( s, start + 1, end - 1));
 }
+return (0);
 }
 
