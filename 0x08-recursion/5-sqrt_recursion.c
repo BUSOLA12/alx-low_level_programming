@@ -18,7 +18,7 @@ return (_sqrt_helper(n, 0));
  * _sqrt_helper - recurses to find the natural
  * square root of a number
  * @n: number to calculate the sqaure root of
- * @i: iterator
+ * @x: iterator
  *
  * Return: the resulting square root
  */
