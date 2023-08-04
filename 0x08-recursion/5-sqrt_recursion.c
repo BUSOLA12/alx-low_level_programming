@@ -1,5 +1,5 @@
 #include "main.h"
-int _sqrt_helper(int n int x);
+int _sqrt_helper(int n, int x);
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: number to calculate the square root of
@@ -22,7 +22,7 @@ return (int _sqrt_helper(n, 0);
  *
  * Return: the resulting square root
  */
-int _sqrt_helper(int n int x)
+int _sqrt_helper(int n, int x)
 {
 if (x * x > n)
 {
