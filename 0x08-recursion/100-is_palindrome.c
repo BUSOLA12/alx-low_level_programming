@@ -43,7 +43,7 @@ if (start >= end)
 {
 return (1);
 }
-if (s[start] = s[end])
+if (s[start] == s[end])
 {
 return (is_palindrome_recursive( s, start + 1, end - 1));
 }
