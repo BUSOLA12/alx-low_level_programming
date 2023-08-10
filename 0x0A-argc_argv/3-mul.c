@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 {
 if (argc = 0)
 {
-printf("%s\n", "Error");
+char *str[] = "Error";
+printf("%s\n", str);
 return (1);
 }
 int result = argv[0] * argv[1];
