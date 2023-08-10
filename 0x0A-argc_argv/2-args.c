@@ -4,15 +4,15 @@
  * main - prints arguments passed to it
  * @argc: number of arguments
  * @argv: arguments passed to main
- * @count: iteration
+ * @i: iteration
  * Return: 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-int count;
-for (count = 0; count < argc; count++)
+int i;
+for (i = 0; i < argc; i++)
 {
-printf("%s\n", argv[count]);
+printf("%s\n", argv[i]);
 }
 return (0);
 }
