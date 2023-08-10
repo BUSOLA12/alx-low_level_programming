@@ -29,7 +29,7 @@ int digit = *str - '0';
 result = result * 10 + digit;
 str++;
 }
-return result * sign;
+return ((result) * (sign));
 }
 
 /**
@@ -37,8 +37,7 @@ return result * sign;
  * @argc: number of arguments
  * @argv: array of arguments passed to main
  *
- * Return: 1 (argc = 0)
- * Return: 0 (Success)
+ * Return: 1 (argc = 0) 0 (Success)
  */
 int main(int argc, char *argv[])
 {
@@ -48,7 +47,7 @@ char *str[] = "Error";
 printf("%s\n", str);
 return (1);
 }
-int result = _atoi(argv[0]) * _atoi(argv[1]);
+int result = (_atoi(argv[0])) * (_atoi(argv[1]));
 print("%d\n", result);
 return (0);
 }
