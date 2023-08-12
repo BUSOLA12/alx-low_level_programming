@@ -4,8 +4,8 @@
 #include <stdlib.h>
 /**
  * argstostr - concatenates all the aeguments of my program
- * @ac:
- * @av:
+ * @ac: number of arguments
+ * @av: pointer to arguments
  *
  * Return: a pointer to a new string (Success) NULL (failure)
  */
@@ -25,14 +25,14 @@ char *argstostr(int ac, char **av)
 	total_length = 0;
 	for (i = 0; i < ac; i++)
 	{
-	
+
 	total_length += strlen(av[i]) + 1;
 	}
-	
+
 	concatenated_str = (char *) malloc(sizeof(char) * total_length + 1);
        for (j = 0; j < ac; j++)
        {
-strcpy(concatenated_str + current_pos, av[j]); 
+strcpy(concatenated_str + current_pos, av[j]);
 current_pos += strlen(av[j]);
 concatenated_str[current_pos] = '\n';
 current_pos++;
