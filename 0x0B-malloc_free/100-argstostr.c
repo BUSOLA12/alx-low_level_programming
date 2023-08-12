@@ -30,14 +30,14 @@ char *argstostr(int ac, char **av)
 	}
 
 	concatenated_str = (char *) malloc(sizeof(char) * total_length + 1);
-       for (j = 0; j < ac; j++)
-       {
+	for (j = 0; j < ac; j++)
+	{
 strcpy(concatenated_str + current_pos, av[j]);
 current_pos += strlen(av[j]);
 concatenated_str[current_pos] = '\n';
 current_pos++;
-       }
-       concatenated_str[current_pos] = '\0';
-       return (concatenated_str);
+	}
+	concatenated_str[current_pos] = '\0';
+	return (concatenated_str);
 
 }
