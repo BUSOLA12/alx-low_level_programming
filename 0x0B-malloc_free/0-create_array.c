@@ -15,7 +15,8 @@ if (size == 0)
 {
 	return (NULL);
 }
-char *array = malloc(sizeof(char) * size);
+char *array
+array = (char *) malloc(sizeof(char) * size);
 array = c;
 if (array == NULL)
 {
