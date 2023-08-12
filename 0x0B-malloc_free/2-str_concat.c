@@ -28,7 +28,7 @@ if (concat_str == NULL)
 return (NULL);
 }
 strcpy(concat_str, s1);
-strcpy(concat_str, s2);
+strcpy(concat_str + len1, s2);
 concat_str[len1 + len2 + 1] = '\0';
 return (concat_str);
 }
