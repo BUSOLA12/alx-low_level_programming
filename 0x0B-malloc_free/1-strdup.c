@@ -23,5 +23,5 @@ return (NULL);
 }
 strcpy(new_str, str);
 new_str[len] = '\0';
-return new_str;
+return (new_str);
 }
