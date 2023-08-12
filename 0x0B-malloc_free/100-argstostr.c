@@ -18,19 +18,19 @@ char *argstostr(int ac, char **av)
 	char *concatenated_str;
 
 	       current_pos = 0;
-	if (ac == 0 || av == NULL)
+if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 	total_length = 0;
-	for (i = 0; i < ac; i++)
+for (i = 0; i < ac; i++)
 	{
 
 	total_length += strlen(av[i]) + 1;
 	}
 
 	concatenated_str = (char *) malloc(sizeof(char) * total_length + 1);
-	for (j = 0; j < ac; j++)
+for (j = 0; j < ac; j++)
 	{
 strcpy(concatenated_str + current_pos, av[j]);
 current_pos += strlen(av[j]);
