@@ -40,4 +40,4 @@ current_pos++;
        concatenated_str[current_pos] = '\0';
        return (concatenated_str);
 
-
+}
