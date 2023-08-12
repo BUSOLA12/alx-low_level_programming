@@ -16,12 +16,12 @@ if (str == NULL)
 return (NULL);
 }
 len = strlen(str);
-new_str = (char *) malloc(sizeof(char) * (len + 1));
+new_str = (char *) malloc(sizeof(char) * len);
 if (new_str == NULL)
 {
 return (NULL);
 }
-str[len + 1] = new_str[len + 1];
-str[len + 1] = '\0';
-return new_str[len + 1];
+strcpy(new_str, str);
+new_str[len] = '\0';
+return new_str;
 }
