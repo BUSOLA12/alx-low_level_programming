@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stddef.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * argstostr - concatenates all the aeguments of my program
  * @ac:
@@ -12,7 +15,6 @@ char *argstostr(int ac, char **av)
 	int j;
 	int total_length;
 	int i;
-	int current_pos;
 	char *concatenated_str;
 
 	if (ac == 0 || av == NULL)
@@ -36,6 +38,6 @@ concatenated_str[current_pos] = '\n';
 current_pos++;
        }
        concatenated_str[current_pos] = '\0';
-       return (concatenated_str);
+       return (concatenated_str;
 
 
