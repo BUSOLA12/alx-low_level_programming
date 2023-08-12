@@ -17,6 +17,7 @@ char *argstostr(int ac, char **av)
 	int i;
 	char *concatenated_str;
 
+	       current_pos = 0;
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
@@ -31,7 +32,6 @@ char *argstostr(int ac, char **av)
 	concatenated_str = (char *) malloc(sizeof(char) * total_length + 1);
        for (j = 0; j < ac; j++)
        {
-	       current_pos = 0;
 strcpy(concatenated_str + current_pos, av[j]); 
 current_pos += strlen(av[j]);
 concatenated_str[current_pos] = '\n';
