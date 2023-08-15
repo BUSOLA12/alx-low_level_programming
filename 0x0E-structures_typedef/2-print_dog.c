@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_dog - prints a struct dog
  * @d - pointer to dog initials
@@ -21,6 +23,5 @@ if ((d -> owner) == NULL)
 {
         printf("Owner: (nil)");
 }
-else {
 printf("Name: %s\n Age: %.2f\n Owner: %s\n", name, age, owner);
-}
+
