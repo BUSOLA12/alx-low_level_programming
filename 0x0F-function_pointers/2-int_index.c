@@ -1,4 +1,4 @@
-#include "function_pointers"
+#include "function_pointers.h"
 /**
  * int_index - checks for an integer
  * @array: array to iterate
