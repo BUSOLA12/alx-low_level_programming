@@ -11,6 +11,7 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i;
 	int sum;
 	va_list valist;
+
 	va_start(valist, n);
 	if (n == 0)
 	{
