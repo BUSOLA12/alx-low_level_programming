@@ -1,10 +1,9 @@
-Toggle navigation
-You have a captain's log due before 2023-09-03 (in about 13 hours)! Log it now!
+
 0x14. C - Bit manipulation
 C
  By: Julien Barbier
  Weight: 1
- Project over - took place from Aug 31, 2023 6:00 AM to Sep 1, 2023 6:00 AM
+ Project over - took place from Nov 23, 2023 6:00 AM to Nov 24, 2023 6:00 AM
  An auto review will be launched at the deadline
 In a nutshell…
 Auto QA review: 0.0/55 mandatory & 0.0/8 optional
@@ -97,7 +96,7 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 0-binary_to_uint.c
-    
+     
 1. 1
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -144,7 +143,7 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 1-print_binary.c
-    
+     
 2. 10
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -185,7 +184,7 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 2-get_bit.c
-    
+     
 3. 11
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -229,7 +228,7 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 3-set_bit.c
-    
+     
 4. 100
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -273,7 +272,7 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 4-clear_bit.c
-    
+     
 5. 101
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -316,5 +315,70 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x14-bit_manipulation
 File: 5-flip_bits.c
-    
+     
+6. Endianness
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Write a function that checks the endianness.
+
+Prototype: int get_endianness(void);
+Returns: 0 if big endian, 1 if little endian
+julien@ubuntu:~/0x14. Binary$ cat 100-main.c
+#include <stdio.h>
+#include "main.h"
+
+int main(void)
+{
+    int n;
+
+    n = get_endianness();
+    if (n != 0)
+    {
+        printf("Little Endian\n");
+    }
+    else
+    {
+        printf("Big Endian\n");
+    }
+    return (0);
+}
+julien@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-get_endianness.c -o h
+julien@ubuntu:~/0x14. Binary$ ./h 
+Little Endian
+julien@ubuntu:~/0x14. Binary$ lscpu | head
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                1
+On-line CPU(s) list:   0
+Thread(s) per core:    1
+Core(s) per socket:    1
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+julien@ubuntu:~/0x14. Binary$
+Repo:
+
+GitHub repository: alx-low_level_programming
+Directory: 0x14-bit_manipulation
+File: 100-get_endianness.c
+     
+7. Crackme3
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Find the password for this program.
+
+Save the password in the file 101-password
+Your file should contain the exact password, no new line, no extra space
+julien@ubuntu:~/0x14. Binary$ ./crackme3 `cat 101-password`
+Congratulations!
+julien@ubuntu:~/0x14. Binary$ 
+Repo:
+
+GitHub repository: alx-low_level_programming
+Directory: 0x14-bit_manipulation
+File: 101-password
+     
 Copyright © 2023 ALX, All rights reserved.
+
+
