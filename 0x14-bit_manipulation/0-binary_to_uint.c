@@ -7,7 +7,8 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len, uint, power;
+	unsigned int uint, power;
+	int len;
 
 	for (len = 0; b[len]; len++)
 	{
@@ -16,7 +17,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 	}
-	for (uint = 0; power = 1; len--; len >= 0; len--, power *= 2;)
+	for (uint = 0, power = 1, len--; len >= 0; len--, power *= 2)
 	{
 		if (b[len] == '1')
 		{
